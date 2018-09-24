@@ -11,10 +11,12 @@ body {
 a {
     color: #333;
 }
-a:link, a:visited, a:hover, a:active {
+a:link {
     text-decoration: none;
 }
-
+a:visited, a:hover, a:active {
+    text-decoration: underline;
+}
 .header {
     margin: 0 auto;
     display: block;
@@ -92,9 +94,6 @@ a:link, a:visited, a:hover, a:active {
     width: 80%;
     margin:50px auto 0;
     table-layout: fixed;
-    /* display: flex;
-    width: 80%;
-    margin: 0 auto; */
 }
 .service-box {
     display: table-cell;
@@ -117,4 +116,78 @@ a:link, a:visited, a:hover, a:active {
 .service-text {
     padding: 25px;
     line-height: 30px;
+}
+/* ワークス */
+.works-wrapper {
+    display: table;
+    width: 80%;
+    margin: 50px auto 120px;
+    table-layout: fixed;
+}
+.works-box {
+    display: table-cell;
+    text-align: center;
+}
+.works-image {
+    width: 90%;
+    margin-left: 20px;
+}
+/* ブログ */
+.blog-wrapper {
+    display: table;
+    width: 80%;
+    margin: 50px auto 0;
+    table-layout: fixed;
+}
+.blog-box {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    padding: 20px 15px;
+}
+.blog-image {
+    width: 100%;
+}
+.blog-text {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.button {
+    display: inline-block;
+    position: absolute;
+    width: 20%;
+    background-color: rgb(240, 240, 240);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 35px;
+    right: 0;
+    bottom: 0; 
+}
+.pagetop-button {
+    text-align: center;
+    margin: 150px auto 0; 
+}
+.button-image {
+    width: 30px;
+}
+.footer {
+    width: 100%;
+    padding: 50px 0;
+}
+.horizontal-list {
+    padding-left: 60px;
+}
+.horizontal-list .horizontal-item {
+    display: inline-block;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-left: 50px;
+}
+.copyright {
+    text-align: right;
+    font-size: 1.1rem;
+    padding-right: 60px;
 }
